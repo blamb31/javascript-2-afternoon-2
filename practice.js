@@ -55,7 +55,7 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 
 function looper (family){
   for (let i = 0; i < family.length; i++) {
-    function alert(family)
+    alert(family[i])
   }
 }
 
@@ -72,6 +72,11 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 
 //Code Here
 
+function reversedLooper (letters){
+  for (let i =  letters.length -1; i >= 0; i--) {
+    alert(letters[i])
+  }
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -86,6 +91,19 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 */
 
 //Code Here
+
+let evenArray = []
+
+function evenFinder(nums) {
+  for (i = 0; i < nums.length; i++ ) {
+    if (nums[i] % 2 === 0){
+      evenArray.push(nums[i])
+    }
+  }
+  return evenArray
+}
+
+
 
 
 
@@ -115,7 +133,19 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 */
 
 //Code Here
-
+let evensArray = []
+let oddsArray = []
+function divider (arr){
+  for (i = 0; i < arr.length; i++ ) {
+    if (arr[i] % 2 === 0){
+      evensArray.push(arr[i])
+    }
+    else {
+      oddsArray.push(arr[i])
+    }
+  }
+  return [evensArray,oddsArray]
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -129,16 +159,26 @@ var getRandomArbitrary = function() {
 /* 
   var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
   Above you're given a function (getRandomArbitrary) that will return a random number between 0 and 30.
-  There is also a commented out array full of numbers to help you visualize what your function will be receiving.
+  There is also a commented out array full of numbers to help you visualize what your function will be 
+  receiving.
   Write a function named finder that will take in an array as an argument.
-  In the function create a variable called randomNumber and set it to the invocation of getRandomArbitrary.
+  In the function create a variable called randomNumber and set it to the invocation of 
+  getRandomArbitrary.
   Loop through the array to see if randomNumber is in the array. 
   If it is, return true, if it's not, return false
 */
 
 //Code Here
 
-
+function finder (arr) {
+  let randomNumber = getRandomArbitrary()
+  for (let i = 0; i <= 30; i ++) {
+    if (randomNumber === arr[i]){
+      return true
+    }
+  }
+  return false
+}
 
 ////////// PROBLEM 8 //////////
 
