@@ -248,6 +248,13 @@ function addItem (list, item) {
 
 //Code Here
 
+function maker(){
+  let numberArr = []
+  for (let i = 1; i <= 215; i++) {
+    numberArr.push(i)
+  }
+  return numberArr
+}
 
 
 ////////// PROBLEM 10 //////////
@@ -263,6 +270,16 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 */
   
 //Code Here
+
+function addTen(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = Number(arr[i])
+    arr[i] += 10
+  }
+  return arr
+}
+
+console.log(addTen(numbers))
 
 
 
@@ -289,6 +306,15 @@ for(var i = 0; i < num2; i++){
 
 //Code Here
 
+function longer(arr1, arr2) {
+  if (arr1.length > arr2.length) {
+    return arr1
+  }
+  else {
+    return arr2
+  }
+}
+
 
 
 /*
@@ -301,6 +327,9 @@ for(var i = 0; i < num2; i++){
 
 //Code Here
 
+function both (arr1, arr2) {
+  for (let i = 0; )
+}
 
 
 ////////// PROBLEM 12 //////////
