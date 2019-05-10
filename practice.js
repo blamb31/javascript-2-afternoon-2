@@ -327,9 +327,23 @@ function longer(arr1, arr2) {
 
 //Code Here
 
+
+
+let newArray = []
+
 function both (arr1, arr2) {
-  for (let i = 0; )
+  for (let j = 0; j < arr1.length; j++) {
+    for(let k = 0; k < arr2.length; k++) {
+      if (arr1[j] === arr2[k]) {
+        newArray.push(arr2[k])
+      }
+    }
+  }
+  return newArray
 }
+
+
+
 
 
 ////////// PROBLEM 12 //////////
