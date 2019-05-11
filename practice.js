@@ -384,6 +384,9 @@ var colt = {
 
 //Code Here
 
+devMountainEmployees.push(joe,cahlan,ryan,colt)
+
+
 
 
 /*
@@ -393,25 +396,35 @@ var colt = {
 
 //Code Here
 
+for (let i = 0; i < devMountainEmployees.length; i++){
+  if (devMountainEmployees[i].name === "Cahlan"){
+    devMountainEmployees.splice(i,1)
+  }
+}
+
 
 
 ////////// PROBLEM 13 //////////
 
 
 /*
-  A very clean way to pass around large LISTS (arrays) of COLLECTIONS (objects) of data is to have an array full of objects. 
+  A very clean way to pass around large LISTS (arrays) of COLLECTIONS (objects) of 
+  data is to have an array full of objects. 
   Create an empty array called users.
 */
 
 //Code Here
 
-
+let users = []
 
 /*
-  Now add three user objects to your users array. Each user object should contain the following properties. name, email, password, username.
+  Now add three user objects to your users array. Each user object should 
+  contain the following properties. name, email, password, username.
 
   Include the following user1 object as one of the objects in your array.
 */
+
+
 
 // Do not edit the code below.
 var user1 = {
@@ -424,22 +437,45 @@ var user1 = {
 
 //Code Here
 
+let user2 = {
+  name: "Blake Lamb",
+  email: "blake.lamb31@gmail.com",
+  password: "1234",
+  username: "blamb31"
+}
 
+let user3 = {
+  name: "Zack Lamb",
+  email: "zack@gmail.com",
+  password: "abcde",
+  username: "zackLamb"
+}
+
+users.push(user1,user2,user3)
+
+users
 
 /*
   Now you have a very common data structure. 
   Twitter is a good use case.
-  It's easy to imagine that your followers list on Twitter is an array full of objects and those objects contain properties about the specific person you follow.
+  It's easy to imagine that your followers list on Twitter is an array full 
+  of objects and those objects contain properties about the specific person you follow.
 
   Now let's say that Mark decided to delete his account.
-  Loop through your array of objects until you find Mark's account (use his email, mark.mciver@devmounta.in, to find him).
+  Loop through your array of objects until you find Mark's account 
+  (use his email, mark.mciver@devmounta.in, to find him).
   Once you find the array index he's located in, delete him from the array.
 */
 
 //Code Here
 
+for (let i = 0; i < users.length; i++){
+  if (users[i].email === "mark.mciver@devmounta.in"){
+    users.splice(i, 1)
+  }
+}
 
-
+users
 /*
   The activity we just did is very much how data works in 'the real world'.
 */
